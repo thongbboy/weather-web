@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="js/all.min.js"></script>
+    <script src="js/moment.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="main-section">
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố...">
+                </div>
+            </div>
+            <div class="additional-section">
+                <div class="info-wrapper">
+                    <p class="city-name">--</p>
+                    <p class="weather-state">--</p>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+                    <p class="temperature">--</p>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <div class="label">Mặt trời mọc</div>
+                        <div class="value sunrise">
+                            --
+                            <span>h</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="label">Mặt trời Lặn</div>
+                        <div class="value sunset">
+                            --
+                            <span>h</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <div class="label">Độ ẩm</div>
+                        <div class="value"><span class="humidity">--</span>%</div>
+                    </div>
+                    <div class="item">
+                        <div class="label">Gió</div>
+                        <div class="value"><span class="wind-speed">--</span> km/h</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+
+    </div>
+    <script src="./js/new-york-api.js"></script>
+    <script src="./js/luan-don-api.js"></script>
+    <script src="./js/ha-noi-apai.js"></script>
+
+    <div class="weather_child">
+        <div class="weather_child_item">
+            <div class="big-of-big">
+                <div class="city_name-child">New York</div>
+                <div class="temperature-child" id="temperature-child">--</div>
+            </div>
+            <div class="child-of-child">
+                <div class="sunrise-child child-item">
+                    Mặt trời mọc: <span class="sunrise-child" id="sunrise-child">--</span>
+                </div>
+                <div class=" child-item">
+                    Mặt trời lặn: <span class="sunset-child " id="sunset-child">--</span>
+                </div>
+                <div class="child-item">
+                    Độ ẩm: <span class="humidity-child " id="humidity-child">--</span>
+                </div>
+                <div class=" child-item">
+                    Gió: <span class="windSpeed-child " id="winSpeed-child">--</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather_child_item">
+            <div class="big-of-big">
+                <div class="city_name-child">Luân Đôn</div>
+                <div class="temperature-child" id="temperature-child1">--</div>
+            </div>
+            <div class="child-of-child">
+                <div class="sunrise-child child-item">
+                    Mặt trời mọc: <span class="sunrise-child" id="sunrise-child1">--</span>
+                </div>
+                <div class=" child-item">
+                    Mặt trời lặn: <span class="sunset-child " id="sunset-child1">--</span>
+                </div>
+                <div class="child-item">
+                    Độ ẩm: <span class="humidity-child " id="humidity-child1">--</span>
+                </div>
+                <div class=" child-item">
+                    Gió: <span class="windSpeed-child " id="winSpeed-child1">--</span>
+                </div>
+            </div>
+        </div>
+        <div class="weather_child_item">
+            <div class="big-of-big">
+                <div class="city_name-child">Hà Nội</div>
+                <div class="temperature-child" id="temperature-child2">--</div>
+            </div>
+            <div class="child-of-child">
+                <div class="sunrise-child child-item">
+                    Mặt trời mọc: <span class="sunrise-child" id="sunrise-child2">--</span>
+                </div>
+                <div class=" child-item">
+                    Mặt trời lặn: <span class="sunset-child " id="sunset-child2">--</span>
+                </div>
+                <div class="child-item">
+                    Độ ẩm: <span class="humidity-child " id="humidity-child2">--</span>
+                </div>
+                <div class=" child-item">
+                    Gió: <span class="windSpeed-child " id="winSpeed-child2">--</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
