@@ -8,6 +8,7 @@
     }
     .weather_child {
         display: flex;
+        margin-left: 0;
         margin-left: 11%;
     }
     .weather_child_item {
@@ -23,6 +24,7 @@
         width: 35%;
     }
     .weather_child {
+        margin-left: 0;
         margin-left: 6%;
     }
 }
@@ -30,6 +32,7 @@
 @media screen and ( max-width: 908px) {
     .weather_child {
         display: block;
+        margin-left: 0;
         margin-left: 24%;
     }
     .weather_child_item {
@@ -45,12 +48,23 @@
     }
 }
 
+@media screen and ( max-width: 821px) {
+    .body {
+        background-size: cover;
+        width: 100vw;
+    }
+    .additional-section {
+        width: 80%;
+    }
+}
+
 @media screen and ( max-width: 753px) {
     .weather_child_item {
         width: 46%;
         padding: 30px;
     }
     .weather_child {
+        margin-left: 0;
         margin-left: 26%;
     }
     .additional-section {
@@ -114,10 +128,11 @@
 @media screen and ( max-width: 656px) {
     .weather_child {
         margin-left: 25%;
+        margin-left: 0;
     }
 }
 
-@media screen and ( max-width: 400px) {
+@media screen and ( max-width: 415px) {
     .weather_child {
         margin-left: 0;
     }
