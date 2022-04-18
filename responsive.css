@@ -1,0 +1,130 @@
+@media screen and (min-width: 1196px) {}
+
+@media screen and ( max-width: 1196px) {
+    body,
+    .body,
+    .html {
+        width: 100%;
+    }
+    .weather_child {
+        display: flex;
+        margin-left: 11%;
+    }
+    .weather_child_item {
+        width: 30%;
+    }
+    .weather-hanoi {
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 1064px) {
+    .weather_child_item {
+        width: 35%;
+    }
+    .weather_child {
+        margin-left: 6%;
+    }
+}
+
+@media screen and ( max-width: 908px) {
+    .weather_child {
+        display: block;
+        margin-left: 24%;
+    }
+    .weather_child_item {
+        width: 50%;
+        margin-top: 50px;
+    }
+    .weather-hanoi {
+        display: flex;
+    }
+    .body {
+        background-size: auto;
+        height: auto;
+    }
+}
+
+@media screen and ( max-width: 753px) {
+    .weather_child_item {
+        width: 46%;
+        padding: 30px;
+    }
+    .weather_child {
+        margin-left: 26%;
+    }
+    .additional-section {
+        max-width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .search-bar {
+        width: 30%;
+    }
+    .additional-section .row {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    .additional-section .row .item {
+        padding-bottom: 20px;
+    }
+    .weather-hanoi {
+        display: none;
+    }
+    .weather_child_item .child-of-child {
+        padding-left: 10px;
+    }
+    .weather_child_item .child-of-child span {
+        padding-left: 0;
+    }
+}
+
+@media screen and ( max-width: 714px) {
+    .additional-section {
+        display: block;
+    }
+    .additional-section .info-wrapper {
+        padding: 0;
+    }
+    .weather-hanoi {
+        display: none;
+    }
+    .additional-section .row {
+        padding-bottom: 0px;
+        display: flex;
+        flex-wrap: inherit;
+    }
+    .additional-section .row .item {
+        text-align: center;
+        padding-right: 40px;
+    }
+    .info-wrapper {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .weather_child_item .child-of-child {
+        padding-left: 10px;
+    }
+    .weather_child_item {
+        padding: 20px;
+        width: calc(46% + 20px);
+    }
+}
+
+@media screen and ( max-width: 656px) {
+    .weather_child {
+        margin-left: 25%;
+    }
+}
+
+@media screen and ( max-width: 400px) {
+    .weather_child {
+        margin-left: 0;
+    }
+    .additional-section {
+        max-width: 70%;
+    }
+    .weather_child_item {
+        margin-left: 20%;
+    }
+}
